@@ -1,0 +1,174 @@
+/* Reset all elements' margin and padding to zero */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Style for the body element */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Set a clean, modern font */
+  background-color: rgba(143, 211, 88, 0.911); /* Light green background with slight transparency */
+  color: rgb(51, 51, 51); /* Dark gray text color */
+  padding: 40px; /* Add space around the body content */
+}
+
+/* Navigation bar container */
+.navbar {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space items evenly with edges aligned */
+  background-color: rgb(0, 90, 156); /* Deep blue background */
+  padding: 20px 40px; /* Add space inside navbar */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 40px; /* Space below navbar */
+}
+
+/* Logo image inside navbar */
+.logo {
+  height: 60px; /* Set logo height */
+}
+
+/* Container for navigation links */
+.nav-links {
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 25px; /* Space between each link */
+}
+
+/* Individual navigation link styles */
+.nav-links a {
+  color: rgb(255, 255, 255); /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Semi-bold text */
+  font-size: 16px; /* Set font size */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Container for audio section heading */
+.heading-audio {
+  text-align: center; /* Center the text */
+  margin-bottom: 40px; /* Space below heading */
+}
+
+/* Style for audio section heading text */
+.heading-audio h5 {
+  font-size: 28px; /* Large heading text */
+  color: rgb(0, 90, 156); /* Deep blue color */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+/* Main content container */
+.content {
+  background-color: rgb(255, 255, 255); /* White background */
+  padding: 40px; /* Space inside content box */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 1000px; /* Limit width */
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0 4px 12px black; /* Stronger shadow (overwrites previous) */
+}
+
+/* Paragraphs inside content */
+.content p {
+  font-size: 17px; /* Medium text size */
+  margin-bottom: 30px; /* Space below each paragraph */
+  line-height: 1.8; /* Increase line spacing for readability */
+}
+
+/* Container for image row */
+.image-row {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  gap: 30px; /* Space between image boxes */
+  justify-content: center; /* Center the row */
+  margin-top: 30px; /* Space above image row */
+}
+
+/* Individual image container */
+.image-box {
+  flex: 1 1 300px; /* Flexible width with minimum of 300px */
+  text-align: center; /* Center image and caption */
+}
+
+/* Image styling */
+.image-box img {
+  width: 100%; /* Fill container width */
+  max-width: 300px; /* Limit image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Caption below image */
+.caption {
+  font-size: 14px; /* Small text size */
+  color: rgb(102, 102, 102); /* Light gray color */
+  margin-top: 10px; /* Space above caption */
+}
+
+/* Container for video heading */
+.heading-video {
+  flex: 1 1 640px; /* Flexible width with minimum of 640px */
+  text-align: center; /* Center the heading */
+}
+
+/* Style for video heading text */
+.heading-video h6 {
+  font-size: 20px; /* Medium heading size */
+  color: rgb(0, 90, 156); /* Deep blue color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Smaller gap between links */
+    margin-top: 15px; /* Space above links */
+  }
+
+  .image-row {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+  }
+
+  .content {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* content1 div part styling */
+.content1 {
+  background-color: whitesmoke; /* Light gray background */
+  padding: 30px; /* Space inside the box */
+  margin-top: 40px; /* Space above the box */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px black; /* Strong shadow */
+  text-align: center; /* Center text */
+  max-width: 800px; /* Limit width */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  font-size: 18px; /* Medium text size */
+  color: rgb(51, 51, 51); /* Dark gray text */
+  line-height: 1.6; /* Comfortable line spacing */
+}
+
+/* Paragraphs inside content1 */
+.content1 p {
+  margin-bottom: 15px; /* Space below each paragraph */
+  font-weight: 500; /* Medium-bold text */
+}
+
+/* Highlighted span inside paragraphs */
+.content1 p span {
+  font-weight: 700; /* Bold text */
+  color: rgb(0, 90, 156); /* Deep blue color for emphasis */
+}

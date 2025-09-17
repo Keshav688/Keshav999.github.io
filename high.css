@@ -1,0 +1,149 @@
+/* Clear browser defaults and use consistent box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the body element */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Clean, modern font */
+  background-color: rgba(143, 211, 88, 0.911); /* Light green background with slight transparency */
+  color: rgb(51, 51, 51); /* Dark gray text for readability and contrast */
+  padding: 40px; /* Space around the content */
+}
+
+/* Navigation bar container */
+.navbar {
+  display: flex; /* Horizontal layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between logo and links */
+  background-color: rgb(0, 90, 156); /* Deep blue background */
+  padding: 20px 40px; /* Inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 40px; /* Space below navbar */
+}
+
+/* Logo image inside navbar */
+.logo {
+  height: 60px; /* Fixed height for logo */
+}
+
+/* Container for navigation links */
+.nav-links {
+  display: flex; /* Horizontal layout */
+  gap: 25px; /* Space between links */
+}
+
+/* Individual navigation links */
+.nav-links a {
+  color: rgb(255, 255, 255); /* White text */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Bold text */
+  font-size: 16px; /* Medium font size */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Section heading for audio content */
+.heading-audio {
+  text-align: center; /* Centered text */
+  margin-bottom: 40px; /* Space below heading */
+}
+
+/* Audio heading text */
+.heading-audio h5 {
+  font-size: 28px; /* Large font size */
+  color: rgb(0, 90, 156); /* Deep blue color */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+/* Main content container */
+.content {
+  background-color: rgb(255, 255, 255); /* White background */
+  padding: 40px; /* Inner spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px black; /* Drop shadow for depth */
+  max-width: 1000px; /* Limit width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Paragraphs inside content */
+.content p {
+  font-size: 17px; /* Slightly larger text */
+  margin-bottom: 30px; /* Space between paragraphs */
+  line-height: 1.8; /* Comfortable line spacing */
+}
+
+/* Row of images */
+.image-row {
+  display: flex; /* Horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  gap: 30px; /* Space between images */
+  justify-content: center; /* Center images */
+  margin-top: 30px; /* Space above image row */
+}
+
+/* Individual image container */
+.image-box {
+  flex: 1 1 300px; /* Flexible width with minimum of 300px */
+  text-align: center; /* Center image and caption */
+}
+
+/* Image styling */
+.image-box img {
+  width: 100%; /* Full width of container */
+  max-width: 300px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Caption below images */
+.caption {
+  font-size: 14px; /* Small text */
+  color: rgb(102, 102, 102); /* Light gray color */
+  margin-top: 10px; /* Space above caption */
+}
+
+/* Section heading for video content */
+.heading-video {
+  flex: 1 1 640px; /* Flexible width with minimum of 640px */
+  text-align: center; /* Centered text */
+}
+
+/* Video heading text */
+.heading-video h6 {
+  font-size: 20px; /* Medium font size */
+  color: rgb(0, 90, 156); /* Deep blue color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Stack navbar items vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Stack nav links vertically */
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  /* Stack images vertically */
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reduce padding for content on small screens */
+  .content {
+    padding: 20px;
+  }
+}
